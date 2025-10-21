@@ -1,0 +1,9 @@
+/home/lami/Task/task4ws/build/arm_description/CMakeFiles/uninstall.dir
+/home/lami/Task/task4ws/build/arm_description/CMakeFiles/arm_description_uninstall.dir
+/home/lami/Task/task4ws/build/arm_description/CMakeFiles/test.dir
+/home/lami/Task/task4ws/build/arm_description/CMakeFiles/edit_cache.dir
+/home/lami/Task/task4ws/build/arm_description/CMakeFiles/rebuild_cache.dir
+/home/lami/Task/task4ws/build/arm_description/CMakeFiles/list_install_components.dir
+/home/lami/Task/task4ws/build/arm_description/CMakeFiles/install.dir
+/home/lami/Task/task4ws/build/arm_description/CMakeFiles/install/local.dir
+/home/lami/Task/task4ws/build/arm_description/CMakeFiles/install/strip.dir

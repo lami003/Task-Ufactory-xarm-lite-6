@@ -1,0 +1,38 @@
+[0.016s] Invoking command in '/home/lami/Task/task4ws/build/arm_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lami/Task/task4ws/build/arm_description -- -j8 -l8
+[0.061s] Invoked command in '/home/lami/Task/task4ws/build/arm_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lami/Task/task4ws/build/arm_description -- -j8 -l8
+[0.073s] Invoking command in '/home/lami/Task/task4ws/build/arm_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/lami/Task/task4ws/build/arm_description
+[0.080s] -- Install configuration: ""
+[0.080s] -- Execute custom install script
+[0.081s] -- Up-to-date symlink: /home/lami/Task/task4ws/install/arm_description/share/arm_description/meshes/base_link.stl
+[0.081s] -- Up-to-date symlink: /home/lami/Task/task4ws/install/arm_description/share/arm_description/meshes/gripper_lite.stl
+[0.081s] -- Up-to-date symlink: /home/lami/Task/task4ws/install/arm_description/share/arm_description/meshes/gripper_lite.stl:Zone.Identifier
+[0.081s] -- Up-to-date symlink: /home/lami/Task/task4ws/install/arm_description/share/arm_description/meshes/link1.stl:Zone.Identifier
+[0.081s] -- Up-to-date symlink: /home/lami/Task/task4ws/install/arm_description/share/arm_description/meshes/link2.stl:Zone.Identifier
+[0.081s] -- Up-to-date symlink: /home/lami/Task/task4ws/install/arm_description/share/arm_description/meshes/link3.stl:Zone.Identifier
+[0.082s] -- Up-to-date symlink: /home/lami/Task/task4ws/install/arm_description/share/arm_description/meshes/link4.stl:Zone.Identifier
+[0.082s] -- Up-to-date symlink: /home/lami/Task/task4ws/install/arm_description/share/arm_description/meshes/link5.stl:Zone.Identifier
+[0.082s] -- Up-to-date symlink: /home/lami/Task/task4ws/install/arm_description/share/arm_description/meshes/link6.stl:Zone.Identifier
+[0.082s] -- Up-to-date symlink: /home/lami/Task/task4ws/install/arm_description/share/arm_description/meshes/link_1.stl
+[0.082s] -- Up-to-date symlink: /home/lami/Task/task4ws/install/arm_description/share/arm_description/meshes/link_2.stl
+[0.082s] -- Up-to-date symlink: /home/lami/Task/task4ws/install/arm_description/share/arm_description/meshes/link_3.stl
+[0.083s] -- Up-to-date symlink: /home/lami/Task/task4ws/install/arm_description/share/arm_description/meshes/link_4.stl
+[0.083s] -- Up-to-date symlink: /home/lami/Task/task4ws/install/arm_description/share/arm_description/meshes/link_5.stl
+[0.083s] -- Up-to-date symlink: /home/lami/Task/task4ws/install/arm_description/share/arm_description/meshes/link_6.stl
+[0.083s] -- Up-to-date symlink: /home/lami/Task/task4ws/install/arm_description/share/arm_description/meshes/link_base.stl:Zone.Identifier
+[0.083s] -- Up-to-date symlink: /home/lami/Task/task4ws/install/arm_description/share/arm_description/urdf/arm.urdf
+[0.083s] -- Up-to-date symlink: /home/lami/Task/task4ws/install/arm_description/share/ament_index/resource_index/package_run_dependencies/arm_description
+[0.083s] -- Up-to-date symlink: /home/lami/Task/task4ws/install/arm_description/share/ament_index/resource_index/parent_prefix_path/arm_description
+[0.084s] -- Up-to-date symlink: /home/lami/Task/task4ws/install/arm_description/share/arm_description/environment/ament_prefix_path.sh
+[0.084s] -- Up-to-date symlink: /home/lami/Task/task4ws/install/arm_description/share/arm_description/environment/ament_prefix_path.dsv
+[0.084s] -- Up-to-date symlink: /home/lami/Task/task4ws/install/arm_description/share/arm_description/environment/path.sh
+[0.084s] -- Up-to-date symlink: /home/lami/Task/task4ws/install/arm_description/share/arm_description/environment/path.dsv
+[0.085s] -- Up-to-date symlink: /home/lami/Task/task4ws/install/arm_description/share/arm_description/local_setup.bash
+[0.085s] -- Up-to-date symlink: /home/lami/Task/task4ws/install/arm_description/share/arm_description/local_setup.sh
+[0.085s] -- Up-to-date symlink: /home/lami/Task/task4ws/install/arm_description/share/arm_description/local_setup.zsh
+[0.086s] -- Up-to-date symlink: /home/lami/Task/task4ws/install/arm_description/share/arm_description/local_setup.dsv
+[0.086s] -- Symlinking: /home/lami/Task/task4ws/install/arm_description/share/arm_description/package.dsv
+[0.095s] -- Up-to-date symlink: /home/lami/Task/task4ws/install/arm_description/share/ament_index/resource_index/packages/arm_description
+[0.096s] -- Up-to-date symlink: /home/lami/Task/task4ws/install/arm_description/share/arm_description/cmake/arm_descriptionConfig.cmake
+[0.096s] -- Up-to-date symlink: /home/lami/Task/task4ws/install/arm_description/share/arm_description/cmake/arm_descriptionConfig-version.cmake
+[0.096s] -- Up-to-date symlink: /home/lami/Task/task4ws/install/arm_description/share/arm_description/package.xml
+[0.098s] Invoked command in '/home/lami/Task/task4ws/build/arm_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/lami/Task/task4ws/build/arm_description

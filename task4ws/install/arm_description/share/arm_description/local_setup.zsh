@@ -1,0 +1,1 @@
+/home/lami/Task/task4ws/build/arm_description/ament_cmake_environment_hooks/local_setup.zsh
