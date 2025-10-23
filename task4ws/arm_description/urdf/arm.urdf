@@ -1,135 +1,142 @@
 <robot name="Ufactoryufactory-xarm-lite-6">
-    <link name="base_link">
-        <visual>
-            <origin xyz= "0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
-            <geometry>
-                <mesh filename="package://arm_description/meshes/link_base.stl" scale="1.0 1.0 1.0"/>
-            </geometry>
-        </visual> 
-    </link>   
+  <material name="grey">
+    <color rgba="0.5 0.5 0.5 1"/>
+  </material>
 
-    <joint name="joint_1" type="revolute">
-        <parent link="base_link"/>
-        <child link="link_1"/>
-        <origin xyz="0.0 0.0 0.2" rpy="0.0 0.0 0.0"/>
-        <axis xyz="0.0 0.0 1.0"/>
-        <limit lower="-3.14" upper="3.14" effort="100" velocity="2.0"/>
-    </joint>
+  <link name="base_link">
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <mesh filename="package://arm_description/meshes/link_base.stl" scale="1.0 1.0 1.0"/>
+      </geometry>
+      <material name="grey"/>
+    </visual>
+  </link>   
 
-    <link name ="link_1">
-      <visual>
-        <origin xyz= "0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
-        <geometry>
-            <mesh filename="package://arm_description/meshes/link_1.stl" scale="1.0 1.0 1.0"/>
-        </geometry>
-       </visual>
-    </link>
+  <joint name="joint_1" type="continuous">
+    <parent link="base_link"/>
+    <child link="link_1"/>
+    <origin xyz="0.0 0.0 0.24" rpy="0.0 0.0 0.0"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <limit lower="-3.14" upper="3.14" effort="100" velocity="2.0"/>
+  </joint>
 
-    <joint name="joint_2" type="revolute">
-        <parent link="link_1"/>
-        <child link="link_2"/>
-        <origin xyz="0.0 0.012 0.2" rpy="0.0 0.0 0.0"/>
-        <axis xyz="0.0 0.0 1.0"/>
-        <limit lower="-3.14" upper="3.14" effort="100" velocity="2.0"/>
-    </joint>
+  <link name ="link_1">
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <mesh filename="package://arm_description/meshes/link_1.stl" scale="1.0 1.0 1.0"/>
+      </geometry>
+      <material name="grey"/>
+    </visual>
+  </link>
 
-    <link name ="link_2">
-      <visual>
-        <origin xyz= "0.0 0.0 0.0" rpy="0.0 1.57 1.57"/>
-        <geometry>
-            <mesh filename="package://arm_description/meshes/link_2.stl" scale="1.0 1.0 1.0"/>
-        </geometry>
-       </visual>
-    </link>
+  <joint name="joint_2" type="revolute">
+    <parent link="link_1"/>
+    <child link="link_2"/>
+    <origin xyz="0.0 -0.001 -0.001" rpy="-1.57 -1.57 0.0"/>
+    <axis xyz="0.0 0.0 0.1"/>
+    <limit lower="-3.14" upper="3.14" effort="100" velocity="2.0"/>
+  </joint>
 
-    <joint name="joint_3" type="revolute">
+  <link name ="link_2">
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <mesh filename="package://arm_description/meshes/link_2.stl" scale="1.0 1.0 1.0"/>
+      </geometry>
+      <material name="grey"/>
+    </visual>
+  </link>
+
+  <joint name="joint_3" type="revolute">
     <parent link="link_2"/> 
     <child link="link_3"/>          
-    <origin xyz="0.0 0.03 0.0" rpy="0.0 0.0 0.0"/>
-    <axis xyz="0.0 1.0 0.0"/>   
+    <origin xyz="0.2 -0.001 0.01"  rpy="-3.2 0.0 0.0"/>
+    <axis xyz="0.0 0.0 0.1"/>   
     <limit lower="-1.5" upper="1.5" effort="100" velocity="2.0"/>
-    </joint>
+  </joint>
 
-    <link name ="link_3">
-      <visual>
-        <origin xyz= "0.0 0.0 0.0" rpy="1.57 0.00 0.00"/>
-        <material name="blue">
-           <color rgba="0.0 0.0 1.0 1.0"/>
-        </material>
-        <geometry>
-            <mesh filename="package://arm_description/meshes/link_3.stl" scale="1.0 1.0 1.0"/>
-        </geometry>
-       </visual>
-    </link>
+  <link name ="link_3">
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="0.00 0.00 0.00"/>
+      <geometry>
+        <mesh filename="package://arm_description/meshes/link_3.stl" scale="1.0 1.0 1.0"/>
+      </geometry>
+      <material name="grey"/>
+    </visual>
+  </link>
 
-    <joint name="joint_4" type="revolute">
+  <joint name="joint_4" type="revolute">
     <parent link="link_3"/>
     <child link="link_4"/>
-    <origin xyz="0.10 0.011 -0.220" rpy="0.0 0.0 0.0"/>   
-    <axis xyz="0.0 0.0 1.0"/>
+    <origin xyz="0.09 -0.227 -0.004" rpy="0.0 0.0 0.0"/>   
+    <axis xyz="0.0 1.0 0.0"/>
     <limit lower="-2.0" upper="2.0" effort="50" velocity="2.0"/>
-    </joint>
+  </joint>
 
-    <link name ="link_4">
-      <visual>
-        <origin xyz= "0.0 0.0 0.0" rpy="0.00 3.14 0.00"/>
-        <geometry>
-            <mesh filename="package://arm_description/meshes/link_4.stl" scale="1.0 1.0 1.0"/>
-        </geometry>
-       </visual>
-    </link> 
+  <link name ="link_4">
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="1.6 0.00 0.00"/>
+      <geometry>
+        <mesh filename="package://arm_description/meshes/link_4.stl" scale="1.0 1.0 1.0"/>
+      </geometry>
+      <material name="grey"/>
+    </visual>
+  </link> 
 
-    <joint name="joint_5" type="revolute">
+  <joint name="joint_5" type="revolute">
     <parent link="link_4"/> 
     <child link="link_5"/>      
-    <origin xyz="0.0 0.0 0.00" rpy="0.0 3.14 3.14"/>
+    <origin xyz="0.0 0.0 0.00" rpy="1.57 3.14 0.0"/>
     <axis xyz="0.0 1.0 0.0"/>   
     <limit lower="-2.5" upper="2.5" effort="50" velocity="2.0"/>
-    </joint>
+  </joint>
 
-    <link name ="link_5">
-      <visual>
-        <origin xyz= "0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
-        <material name="blue">
-           <color rgba="0 0 0.8 1"/>
-        </material>
-        <geometry>
-            <mesh filename="package://arm_description/meshes/link_5.stl" scale="1.0 1.0 1.0"/>
-        </geometry>
-       </visual>
-    </link>
+  <link name ="link_5">
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <mesh filename="package://arm_description/meshes/link_5.stl" scale="1.0 1.0 1.0"/>
+      </geometry>
+      <material name="grey"/>
+    </visual>
+  </link>
 
-    <joint name="joint_6" type="revolute">
+  <joint name="joint_6" type="revolute">
     <parent link="link_5"/>
     <child link="link_6"/>
     <origin xyz="0.0 0.0 0.06" rpy="0.0 0.0 0.0"/>
     <axis xyz="0.0 0.0 1.0"/>
     <limit lower="-3.14" upper="3.14" effort="50" velocity="2.0"/>
-    </joint>
-    
-    <link name ="link_6">
-      <visual>
-        <origin xyz= "0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
-        <geometry>
-            <mesh filename="package://arm_description/meshes/link_6.stl" scale="1.0 1.0 1.0"/>
-        </geometry>
-       </visual>
-    </link> 
+  </joint>
+  
+  <link name ="link_6">
+    <visual>
+      <origin xyz="0.0 0.0 0.00" rpy="0.0 0.0 0.00"/>
+      <geometry>
+        <mesh filename="package://arm_description/meshes/link_6.stl" scale="1.0 1.0 1.0"/>
+      </geometry>
+      <material name="grey"/>
+    </visual>
+  </link> 
 
-    <joint name="joint_7" type="fixed">
+  <joint name="joint_7" type="fixed">
     <parent link="link_6"/>
     <child link="gripper_lite"/>
     <origin xyz="0.0 0.0 0.00" rpy="0.0 0.0 0.0"/>
     <axis xyz="0.0 0.0 1.0"/>   
     <limit lower="-3.14" upper="3.14" effort="50" velocity="2.0"/>
-    </joint>
+  </joint>
 
-    <link name ="gripper_lite">
-      <visual>
-        <origin xyz= "0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
-        <geometry>
-            <mesh filename="package://arm_description/meshes/gripper_lite.stl" scale="1.0 1.0 1.0"/>
-        </geometry>
-       </visual>
-    </link> 
+  <link name ="gripper_lite">
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <mesh filename="package://arm_description/meshes/gripper_lite.stl" scale="1.0 1.0 1.0"/>
+      </geometry>
+      <material name="grey"/>
+    </visual>
+  </link> 
+
 </robot>
